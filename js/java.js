@@ -40,7 +40,7 @@
              })
              $('#slider_2').owlCarousel({   
                 nav:true,
-                startPosition:3,
+                startPosition:2,
                 lop:true,
                 rewind:true,
                 center:true,
