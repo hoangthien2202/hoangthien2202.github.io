@@ -41,6 +41,7 @@
              $('#slider_2').owlCarousel({
                 
                 nav:true,
+                startPosition:2,
                 lop:true,
                 rewind:true,
                 center:true,
