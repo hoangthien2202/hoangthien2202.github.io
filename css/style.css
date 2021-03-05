@@ -107,8 +107,7 @@ header {
      color: seashell;
      height: 30%;
      display: grid;
-     grid-template-columns: 32% 20% 33% ;
-    
+     grid-template-columns: 30% 30% 30% ;
     background-color: #181A1F;
 
  }
@@ -122,25 +121,24 @@ header {
     padding-left: 5%;
 }
 .row2 a{
-    padding-left: 5%;
-    padding-right: 5%;
+    
     margin-left: 5%;
-    margin-right: 5%;
+   
 }
  .row3{
-     width: 70%;
+     width: 75%;
      background-image: linear-gradient(45deg,rgba(95, 196, 180, 0.75) 75%,rgba(95,196,180,0.75)), url("/img/bgr3.png");
      background-size: cover;
      padding: 0px;
-     margin-left: 200px;
+     margin-left: 30%;
 
   }
   .row4{
-    width: 120%;
+    width: 75%;
     background-image: linear-gradient(45deg,rgba(148, 91, 159, 0.75) 75%,rgba(148, 91, 159, 0.75)), url("/img/bgr4.png");
     background-size: cover;
     padding: 0px;
-    margin-left: 1%;
+    margin-left: 20%;
     
  }
  .row5{
@@ -148,7 +146,7 @@ header {
     background-image: linear-gradient(45deg,rgba(142, 204, 59, 0.75) 75%,rgba(142, 204, 59, 0.75)), url("/img/bgr5.png");
     background-size: cover;
     padding: 0px;
-    margin-left: 0px;
+    margin-left: 10%;
     
  }
   .btn3{
@@ -157,22 +155,16 @@ header {
     background-color: #FF1D6A;
     font-size: small;
     color: seashell;
-    margin-right: 20px;
+    margin-left: 2%;
 }
 .row6{
     margin-top: 0%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 10%px;
     padding: 10%;
-    grid-template-rows: 100%;
     background-color: #181A1F;
 }
-.row8{
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 20%);
-    padding: 0px;
-}
+
 .row9{
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -195,7 +187,6 @@ header {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding-top: 3%;
-    
     padding-bottom: 4%;
 
 }
@@ -214,7 +205,6 @@ header {
     background-color: rgba(53, 50, 50, 0.5);
     padding-top:4% ;
     display: grid;
-    grid-template-columns: 100%;
 
 }
 .txt-boxer a{
