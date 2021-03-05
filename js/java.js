@@ -43,6 +43,7 @@
                 nav:true,
                 lop:true,
                 rewind:true,
+                center:true,
                 dots:false,
                 margin: 5,
                 navText: ["<img src='img/trai.png' width='25px' >","<img src='img/phai.png ' width='25px'>"],

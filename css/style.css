@@ -499,13 +499,23 @@ input[type=text]{
 .menu_end_1 li a{
     text-decoration: none;
 }
-#slider_2.owl-item.center > img{
-    transform: scale(1,2);
-    width: 500px;
+#slider_2 .owl-item.active{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0.4;
+    border: 1px #FF6C2C;
+    top: 25px;
+    height: 400px;
 }
-#slider_2.owl-item.active > img{
-    transform: scale(1,1);
-}
-#slider_2.owl-item> img{
-    width: 20%;
+
+#slider_2 .owl-item.active.center {
+   /* height: 400px !important;*/
+    transform: scale(1.2,1.2);
+    opacity: 1;
+    border: 1px #FF6C2C;
+    overflow: hidden;
+    box-shadow: 3px 3px 4px 4px #FF6C2C;
+    
+    width: 100%;
 }
