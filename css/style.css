@@ -72,32 +72,33 @@ header {
       clear: both;
   }
   .row1{
-      margin-top: 7%;
-      margin-left: 50%;
-      width: 50%;
-      height: 50%;
+      margin-top: 10%;
+      margin-left: 100%;
+      transform: translate(-100%);
+      width: 40%;
+      height: 45%;
       background-color:#292F39;
       color: aliceblue;
       padding: 5%;
   }
   .row1 h1{
-      padding: 20px;
+      padding: 4%;
   }
   .row1 p{
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 15px;
+      padding-left: 4%;
+      padding-top: 4%;
+      padding-bottom: 3%;
   }
   .btn{
-      margin-bottom: 22px;
+      margin-bottom: 4%;
       padding: 2%;
       background-color: #FF1D6A ;
       font-size: small;
       color: seashell;
-      margin-right: 20px;
+      margin-left: 5%;
   }
   .btn2{
-    margin-bottom: 22px;
+    margin-bottom: 4%;
     padding: 0px;
     font-size: small;
     color: seashell;
@@ -291,7 +292,7 @@ header {
     text-align: center;
 }
 .katlimine-img{
-    grid-column: span 1-of-2;
+    
     position:relative;
 }
 #btn1{
@@ -301,7 +302,7 @@ header {
     height: 40px;
     border-radius: 15px;
     top: -50%;
-    margin-left: -85%;
+    left: -80%;
 }
 #btn2{
     position: relative;
@@ -310,11 +311,10 @@ header {
     height: 40px;
     border-radius: 15px;
     top: -50%;
-    right: -75%;
+    right: 20%;
 }
 #slider_2{
     background-color: #24272E;
-    margin: auto;
     padding: auto;
     position: relative;
     width: 1550px;
