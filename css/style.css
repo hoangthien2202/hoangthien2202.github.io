@@ -516,4 +516,5 @@ input[type=text]{
     border: 1px #FF6C2C;
     overflow: hidden;
     box-shadow: 3px 3px 4px 4px #FF6C2C;
+    height: auto;
 }
