@@ -38,10 +38,9 @@
                     else n--;
                 }) 
              })
-             $('#slider_2').owlCarousel({
-                
+             $('#slider_2').owlCarousel({   
                 nav:true,
-                startPosition:2,
+                startPosition:3,
                 lop:true,
                 rewind:true,
                 center:true,
