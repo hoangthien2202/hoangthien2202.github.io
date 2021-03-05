@@ -19,7 +19,7 @@ html{
 p{
     color: rgb(185, 182, 182);
     
-font-size: 14px;
+    font-size: 14px;
 }
 h1{
     color: aliceblue;
@@ -108,7 +108,7 @@ header {
      height: 30%;
      display: grid;
      grid-template-columns: 32% 20% 33% ;
-     grid-gap: 100px;
+    
     background-color: #181A1F;
 
  }
