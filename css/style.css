@@ -126,7 +126,7 @@ header {
    
 }
  .row3{
-     width: 75%;
+     width: 70%;
      background-image: linear-gradient(45deg,rgba(95, 196, 180, 0.75) 75%,rgba(95,196,180,0.75)), url("/img/bgr3.png");
      background-size: cover;
      padding: 0px;
@@ -134,7 +134,7 @@ header {
 
   }
   .row4{
-    width: 75%;
+    width: 70%;
     background-image: linear-gradient(45deg,rgba(148, 91, 159, 0.75) 75%,rgba(148, 91, 159, 0.75)), url("/img/bgr4.png");
     background-size: cover;
     padding: 0px;
@@ -142,7 +142,7 @@ header {
     
  }
  .row5{
-    width: 75%;
+    width: 70%;
     background-image: linear-gradient(45deg,rgba(142, 204, 59, 0.75) 75%,rgba(142, 204, 59, 0.75)), url("/img/bgr5.png");
     background-size: cover;
     padding: 0px;
