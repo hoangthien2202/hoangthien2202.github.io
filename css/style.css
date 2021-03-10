@@ -131,6 +131,7 @@ header {
     color: #FFFFFF;
 }
 .welcom{
+    margin-top: 5%;
     position: relative;
     padding: 10% 10%;
     display: grid;
