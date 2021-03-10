@@ -1,3 +1,23 @@
+$('#slider_1').owlCarousel({   
+  nav:true,
+  lop:true,
+  rewind:false,
+  dots:false,
+  margin: 3,
+  items: 3,
+  margin: 10,
+  navText: ["<img src='img/trai.png' width='25px' >","<img src='img/phai.png ' width='25px'>"],
+  responsive:{
+    0:{
+    items:1
+   },
+   600:{
+  items:3
+    },
+   1000:{
+    items:3  }
+}       
+});
 $('#slider_2').owlCarousel({   
     nav:true,
     startPosition:2,
