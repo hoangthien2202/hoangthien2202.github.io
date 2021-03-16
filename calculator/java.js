@@ -31,6 +31,10 @@ items.forEach(function(btn){
             input.innerHTML=(input.innerHTML)+'x';
             str=str+'*';
         }
+        else if(btn.innerHTML=='÷'){
+            input.innerHTML+=btn.innerHTML;
+            str+='/';
+        }
         else if(btn.innerHTML==','){
             input.innerHTML=(input.innerHTML)+'.';
             str=str+'.';
