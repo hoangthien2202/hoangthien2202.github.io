@@ -1,35 +1,45 @@
-var show= document.querySelector('.screen');
 var str="";
-var operator=false;
 var input=document.querySelector('.screen');
 var items=Array.from(document.querySelectorAll('.button'));
 items.forEach(function(btn){
     btn.addEventListener('click',function(){
         if(input.innerHTML=='0'){
-            str="";
+            input.innerHTML='0';
+            str='';
         }
+        
         if(btn.innerHTML=='AC'){
             input.innerHTML='0';
-            str=""
+            str='';
+        }
+        else if(btn.innerHTML=='%'){
+            input.innerHTML=input.innerHTML+btn.innerHTML;
+            str+='/100';
+            str=eval(str);
+            input.innerHTML=str;
         }
         
         else if(btn.innerHTML=='='){
-            input.innerHTML=eval(str);
-            str=input.innerHTML;
+            str=eval(str);
+            input.innerHTML=str;
         }
         else if(btn.innerHTML=='+/-'){
-            input.innerHTML=(str)*(-1);
+            input.innerHTML=(input.innerHTML)*(-1);
+            str=str*(-1);
         }                
-        else if(this.id=='x'){
-            input.innerHTML=(str)+'*';
+        else if(btn.innerHTML=='x'){
+            input.innerHTML=(input.innerHTML)+'x';
+            str=str+'*';
+        }
+        else if(btn.innerHTML==','){
+            input.innerHTML=(input.innerHTML)+'.';
+            str=str+'.';
         }
         else {
-            if(input.innerHTML=="0")
-                input.innerHTML="";
+            if(input.innerHTML=='0')
+                input.innerHTML='';
+            input.innerHTML+=btn.innerHTML;
             str=str+btn.innerHTML;
-            input.innerHTML=str;
         }
     })
 })
-
-
