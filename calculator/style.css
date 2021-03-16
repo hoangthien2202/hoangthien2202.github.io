@@ -29,6 +29,7 @@
   }
   
   .screen {
+    overflow: hidden;
     font-size: 100px;
     font-weight: 300;
     width: 100%;

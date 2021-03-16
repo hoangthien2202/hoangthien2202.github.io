@@ -47,12 +47,14 @@ items.forEach(function(btn){
         else if(btn.innerHTML=='-'){
             if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
                 str=str.substring(0, str.length -1);
+            str=eval(str);
             input.innerHTML=str+'-';
             str+='-';
         }
         else if(btn.innerHTML=='+'){
             if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
                 str=str.substring(0, str.length - 1);
+            str=eval(str);
             input.innerHTML=str+'+';
             str+='+';
         }
