@@ -10,7 +10,7 @@ items.forEach(function(btn){
         
         if(btn.innerHTML=='AC'){
             input.innerHTML='0';
-            str='';
+            
         }
         else if(btn.innerHTML=='%'){
             input.innerHTML=input.innerHTML+btn.innerHTML;
@@ -20,20 +20,41 @@ items.forEach(function(btn){
         }
         
         else if(btn.innerHTML=='='){
+            if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
+                str = str.substring(0, str.length - 1);
             str=eval(str);
             input.innerHTML=str;
+            str+='';
         }
         else if(btn.innerHTML=='+/-'){
             input.innerHTML=(input.innerHTML)*(-1);
             str=str*(-1);
         }                
         else if(btn.innerHTML=='x'){
-            input.innerHTML=(input.innerHTML)+'x';
+            if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
+                str=str.substring(0, str.length - 1);
+            str=eval(str);
+            input.innerHTML=str+'x';
             str=str+'*';
         }
         else if(btn.innerHTML=='÷'){
-            input.innerHTML+=btn.innerHTML;
+            if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
+                str = str.substring(0, str.length - 1);
+            str=eval(str);
+            input.innerHTML=str+'÷';
             str+='/';
+        }
+        else if(btn.innerHTML=='-'){
+            if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
+                str=str.substring(0, str.length -1);
+            input.innerHTML=str+'-';
+            str+='-';
+        }
+        else if(btn.innerHTML=='+'){
+            if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
+                str=str.substring(0, str.length - 1);
+            input.innerHTML=str+'+';
+            str+='+';
         }
         else if(btn.innerHTML==','){
             input.innerHTML=(input.innerHTML)+'.';
