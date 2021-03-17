@@ -18,7 +18,7 @@
     height: 900px;
     padding: 5px;
     position: relative;
-    width: 500px;
+    width: 510px;
   }
   
   .top-container {
@@ -29,8 +29,7 @@
   }
   
   .screen {
-    overflow: hidden;
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 300;
     width: 100%;
     height: 300px;
@@ -65,6 +64,6 @@
   .button.number-0 {
     grid-column: 1 / span 2;
     justify-content: flex-start;
-    width: 243px;
+    width: 245px;
     padding-left: 45%;
   }
