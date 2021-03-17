@@ -5,7 +5,7 @@ items.forEach(function(btn){
     btn.addEventListener('click',function(){
         if(input.innerHTML=='0'){
             input.innerHTML='0';
-            str='';
+            str='0';
         }
         
         if(btn.innerHTML=='AC'){
@@ -40,6 +40,7 @@ items.forEach(function(btn){
         else if(btn.innerHTML=='÷'){
             if(str.charAt(str.length-1)=='+'||str.charAt(str.length-1)=='-'||str.charAt(str.length-1)=='*'||str.charAt(str.length-1)=='/')
                 str = str.substring(0, str.length - 1);
+        
             str=eval(str);
             input.innerHTML=str+'÷';
             str+='/';
