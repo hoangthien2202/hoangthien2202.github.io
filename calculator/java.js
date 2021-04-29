@@ -31,7 +31,7 @@ items.forEach(function(btn){
             str+='';
             operator=false;
         }
-        else if(str.length<13){
+        else if(str.length<13 ){
         if(btn.innerHTML=='%'){
             input.innerHTML=input.innerHTML+btn.innerHTML;
             str+='/100';
