@@ -6,7 +6,7 @@ import axios from 'axios';
 
 class Home extends Component {
     // State of your application
-    state = {
+/*     state = {
       restaurants: [],
       error: null,
     };
@@ -19,7 +19,7 @@ class Home extends Component {
       });
       
       console.log(data);
-    };
+    }; */
     render() {
         return (
             <div>

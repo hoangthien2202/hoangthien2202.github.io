@@ -4,8 +4,6 @@ import '../SignIn/style.css'
 
 
 const Signin = ({loginAccount})=> {
-        
-
         return (
                 <div className="container">
                     <div className="row ">
@@ -48,8 +46,8 @@ const Signin = ({loginAccount})=> {
         );
     
 }
-let email;
-let password;
+var email;
+var password;
 function handleChangeEmail(e) {
     email= (e.target.value);
 }
