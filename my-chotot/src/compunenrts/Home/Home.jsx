@@ -13,17 +13,13 @@ class Home extends Component {
   
     // Fetch your restaurants immediately after the component is mounted
     componentDidMount = async () => {
-      try {
-        const response = await axios.get('http://localhost:1337/users');
-        this.setState({ restaurants: response.data });
-        console.log(response.data);
-      } catch (error) {
-        this.setState({ error });
-      }
+      const { data } = await axios.post('http://localhost:1337/auth/local', {
+        identifier: 'reader@strapi.io',
+        password: '123123',
+      });
+      
+      console.log(data);
     };
-    
-
-
     render() {
         return (
             <div>

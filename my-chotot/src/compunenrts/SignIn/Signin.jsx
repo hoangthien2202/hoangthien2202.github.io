@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import '../SignIn/style.css'
 
-class Signin extends Component {
-    render() {
+
+const Signin = ({loginAccount})=> {
+        
+
         return (
                 <div className="container">
                     <div className="row ">
@@ -18,14 +20,16 @@ class Signin extends Component {
                         <div className="body text-center">
                             <form className="form-signin ">
                             <div className="form-label-group">
-                                <input type="email" id="inputEmail" className="form-control" placeholder="Nhập SĐT của bạn" required autofocus />
+                                <input onChange={ handleChangeEmail } type="numberphone" id="inputEmail" className="form-control" placeholder="Nhập SĐT của bạn" required autofocus />
                                 <label htmlFor="inputPhone" />
                             </div>
                             <div className="form-label-group">
-                                <input type="password" id="inputPassword" className="form-control" placeholder="Nhập mật khẩu của bạn" required />
+                                <input onChange={handleChangePassword} type="password" id="inputPassword" className="form-control" placeholder="Nhập mật khẩu của bạn" required />
                                 <label htmlFor="inputPassword" />
                             </div>     
-                            <button className="btn btn-md btn-primary btn-block" type="submit">Đăng nhập</button>
+                            <div className="btn btn-md btn-primary btn-block">
+                                <a onClick={(e)=>{loginAccount({identifier:{email},password:{password}})}} className="btn btn-primary button-effect" href="#">Đăng nhập</a>
+                            </div>
                             <a className="forget-password" href="/">Bạn quên mật khẩu?</a>
                             <p>hoặc sử dụng</p>                             
                             <ul className="social-button d-flex flex-inline justify-content-center padding-0">
@@ -42,7 +46,15 @@ class Signin extends Component {
 
 
         );
-    }
+    
+}
+let email;
+let password;
+function handleChangeEmail(e) {
+    email= (e.target.value);
+}
+function handleChangePassword(e){
+    password= (e.target.value);
 }
 
 export default Signin;
